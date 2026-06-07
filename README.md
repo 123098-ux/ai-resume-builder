@@ -140,9 +140,6 @@ The application also provides suggestions to improve the overall ATS score.
 
 ![Home Page](screenshots/home-page.png)
 
-### Resume Generation
-
-![Resume Generation](screenshots/generated-resume.png)
 
 ### ATS Analysis
 
@@ -163,7 +160,7 @@ The application also provides suggestions to improve the overall ATS score.
 
 ## Deployment
 
-Live Demo: https://your-vercel-link.vercel.app
+Live Demo:  https://ai-resume-builder-fawn-three.vercel.app/
 
 ---
 
