@@ -140,9 +140,6 @@ The application also provides suggestions to improve the overall ATS score.
 
 ![Home Page](screenshots/home-page.png)
 
-### Resume Generation
-
-![Resume Generation](screenshots/generated-resume.png)
 
 ### ATS Analysis
 
