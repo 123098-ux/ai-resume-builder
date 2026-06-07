@@ -138,12 +138,12 @@ The application also provides suggestions to improve the overall ATS score.
 
 ### Home Page
 
-![Home Page](screenshots/home-page.png)
+![Home Page](public/screenshots/home-page.png)
 
 
 ### ATS Analysis
 
-![ATS Analysis](screenshots/ats-score.png)
+![ATS Analysis](public/screenshots/ats-score.png)
 
 ---
 
