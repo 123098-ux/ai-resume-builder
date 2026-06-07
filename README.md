@@ -1,70 +1,178 @@
-# Getting Started with Create React App
+# AI Resume Builder & ATS Score Checker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+AI Resume Builder & ATS Score Checker is a React-based web application that helps users create professional, ATS-friendly resumes using Google's Gemini API. The application generates resumes from user-provided information and evaluates them using an ATS scoring system that provides feedback and improvement suggestions.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- AI-powered resume generation using Gemini API
+- ATS score analysis and recommendations
+- Resume preview before download
+- PDF export functionality
+- Dynamic sections for:
+  - Personal Information
+  - Education
+  - Work Experience
+  - Projects
+  - Certifications
+  - Skills
+- Responsive user interface
+- Real-time AI assistance
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## System Architecture
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```text
+User
+  │
+  ▼
+React Frontend
+  │
+  ▼
+Gemini API
+  │
+  ▼
+ATS Analyzer
+  │
+  ▼
+Resume Preview & PDF Export
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technology Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Component | Technology |
+|------------|------------|
+| Frontend | React.js |
+| Styling | CSS3 |
+| AI Integration | Gemini API |
+| PDF Generation | jsPDF |
+| Version Control | Git & GitHub |
+| Deployment | Vercel |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Clone the Repository
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/123098/ai-resume-builder.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Navigate to Project Directory
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd my-app
+```
 
-## Learn More
+### Install Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Start Development Server
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application will run at:
 
-### Analyzing the Bundle Size
+```text
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Create a `.env` file in the project root:
 
-### Advanced Configuration
+```env
+REACT_APP_GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```text
+src/
+├── components/
+├── services/
+├── utils/
+├── assets/
+├── App.js
+└── index.js
 
-### `npm run build` fails to minify
+public/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+README.md
+package.json
+```
+
+---
+
+## ATS Scoring Criteria
+
+The ATS score is calculated based on:
+
+- Skills Coverage
+- Keyword Presence
+- Section Completeness
+- Resume Formatting
+- Resume Length
+
+The application also provides suggestions to improve the overall ATS score.
+
+---
+
+## Screenshots
+
+### Home Page
+
+![Home Page](screenshots/home-page.png)
+
+### Resume Generation
+
+![Resume Generation](screenshots/generated-resume.png)
+
+### ATS Analysis
+
+![ATS Analysis](screenshots/ats-score.png)
+
+---
+
+## Future Enhancements
+
+- Job description matching
+- Cover letter generation
+- Multiple resume templates
+- LinkedIn profile integration
+- Multi-language support
+- Advanced ATS analytics
+
+---
+
+## Deployment
+
+Live Demo: https://your-vercel-link.vercel.app
+
+---
+
+## Author
+
+**Deleeshya Davis**
+
+---
+
+## License
+
+This project is developed for educational and learning purposes.
