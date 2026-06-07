@@ -62,7 +62,7 @@ Resume Preview & PDF Export
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/123098/ai-resume-builder.git
+git clone https://github.com/123098-ux/ai-resume-builder.git
 ```
 
 ### Navigate to Project Directory
