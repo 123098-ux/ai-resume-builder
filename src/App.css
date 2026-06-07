@@ -1,38 +1,180 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b,
+    #312e81
+  );
+  min-height: 100vh;
+}
+
+.app {
+  padding: 40px;
+}
+
+.header {
   text-align: center;
+  color: white;
+  margin-bottom: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1 {
+  font-size: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header p {
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.form-card,
+.preview-card {
+  flex: 1;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.form-card h2,
+.preview-card h2 {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #6366f1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: #4f46e5;
+}
+
+.preview-card h3 {
+  margin-top: 20px;
+}
+
+.preview-card ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* AI Resume Section */
+
+.ai-resume {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.ai-resume pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: white;
+  font-size: 15px;
+  line-height: 1.7;
+  font-family: "Segoe UI", sans-serif;
+}
+
+hr {
+  margin: 20px 0;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .app {
+    padding: 20px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ats-container {
+  max-width: 900px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.ats-container textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  resize: vertical;
+  border: 1px solid #ddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ats-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.result-card {
+  padding: 25px;
+  border-radius: 16px;
+  background: white;
+  color: #111827;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.result-card h2 {
+  color: #4f46e5;
+  margin-bottom: 15px;
+}
+
+.result-card h3 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.result-card p {
+  line-height: 1.7;
 }
